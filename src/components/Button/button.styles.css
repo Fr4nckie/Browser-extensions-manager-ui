@@ -1,0 +1,16 @@
+.btn-outline {
+    display: grid;
+    place-items: center;
+    color: var(--neutral-900);
+    text-transform: capitalize;
+    padding: 0.5rem 0.875rem;
+    border: 1px solid var(--neutral-900);
+    border-radius: 28px;
+    transition: 0.2s;
+
+    &:hover {
+        color: var(--neutral-0);
+        background-color: var(--red-500);
+        border-color: var(--red-500);
+    }
+}
