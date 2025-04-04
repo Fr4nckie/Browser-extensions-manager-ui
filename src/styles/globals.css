@@ -1,6 +1,7 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     font-size: 1rem;
+    background: var(--light-gradient);
 }
 
 .container {

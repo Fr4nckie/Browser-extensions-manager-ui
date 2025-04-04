@@ -7,9 +7,11 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     padding: unset;
     margin: unset;
+    font-size: unset;
 }
 
 a {
@@ -23,6 +25,7 @@ li {
 }
 
 button {
+    font-size: unset;
     background-color: unset;
     border: none;
     cursor: pointer;
