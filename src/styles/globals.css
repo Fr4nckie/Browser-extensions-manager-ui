@@ -1,0 +1,9 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.container {
+    max-width: min(1024px, calc(100% - 2rem));
+    margin-inline: auto;
+}

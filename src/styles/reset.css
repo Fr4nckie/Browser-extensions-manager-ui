@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: unset;
+    margin: unset;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    background-color: unset;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
