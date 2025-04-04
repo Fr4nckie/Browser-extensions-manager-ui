@@ -1,0 +1,22 @@
+.header {
+    width: 100%;
+    background-color: var(--neutral-0);
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 24px;
+}
+
+.header_btn-theme {
+    background-color: var(--neutral-100);
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+
+    &:hover {
+        border-color: var(--red-500);
+    }
+}
