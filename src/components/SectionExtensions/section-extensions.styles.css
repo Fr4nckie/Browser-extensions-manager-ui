@@ -1,0 +1,21 @@
+.section-extensions_header {
+    display: grid;
+    place-items: center;
+    gap: 16px;
+    margin-block: 32px;
+}
+
+.section-extensions_title {
+    color: var(--neutral-900);
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .section-extensions_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 42px;
+        margin-bottom: 22px;
+    }
+}
