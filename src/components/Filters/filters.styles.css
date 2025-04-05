@@ -29,4 +29,13 @@
         color: var(--neutral-900);
         background-color: var(--red-500);
     }
+
+    &.dark.active {
+        color: var(--neutral-900);
+    }
+
+    &.active {
+        background-color: var(--red-500);
+        color: var(--neutral-0);
+    }
 }

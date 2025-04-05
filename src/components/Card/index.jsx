@@ -1,32 +1,40 @@
+/* eslint-disable react/prop-types */
 import './card.styles.css'
-import CardIcon from '../../assets/images/logo-devlens.svg?react'
 import { ToggleSlider } from 'react-toggle-slider'
 import Button from '../Button/index.jsx'
 import { useTheme } from '../../hooks/useTheme.jsx'
+import { useExtensions } from '../../hooks/useExtensions.jsx'
 
-function Card() {
+function Card({ extension }) {
     const { theme } = useTheme()
+    const { dispatch } = useExtensions()
 
     return (
         <article className={`card ${theme === 'dark' && 'dark'}`}>
             <div className="card_header">
                 <div className="card_icon">
-                    <CardIcon />
+                    <img src={extension.logo} alt="" />
                 </div>
                 <div className="card_content">
-                    <h3 className="card_title">DevLens</h3>
+                    <h3 className="card_title">{extension.name}</h3>
                     <p
                         className={`card_description ${
                             theme === 'dark' && 'dark'
                         }`}
                     >
-                        Quickly inspect page layouts and visualize element
-                        boundaries.
+                        {extension.description}
                     </p>
                 </div>
             </div>
             <div className="card_actions">
-                <Button />
+                <Button
+                    onclick={() =>
+                        dispatch({
+                            type: 'DELETE_EXTENSION',
+                            payload: extension.id
+                        })
+                    }
+                />
                 <ToggleSlider
                     barBackgroundColor={
                         theme === 'dark'
@@ -37,6 +45,13 @@ function Card() {
                     padding={2}
                     barHeight={20}
                     barWidth={38}
+                    onToggle={() =>
+                        dispatch({
+                            type: 'TOGGLE_EXTENSION',
+                            payload: extension.id
+                        })
+                    }
+                    active={extension.isActive}
                 />
             </div>
         </article>
