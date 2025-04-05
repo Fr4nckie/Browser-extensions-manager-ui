@@ -1,10 +1,19 @@
+import { useTheme } from '../../hooks/useTheme.jsx'
 import './filters.styles.css'
 function Filters() {
+    const { theme } = useTheme()
+
     return (
-        <div className="filters">
-            <button className="filters_btn">all</button>
-            <button className="filters_btn">active</button>
-            <button className="filters_btn">inactive</button>
+        <div className={`filters ${theme === 'dark' && 'dark'}`}>
+            <button className={`filters_btn ${theme === 'dark' && 'dark'}`}>
+                all
+            </button>
+            <button className={`filters_btn ${theme === 'dark' && 'dark'}`}>
+                active
+            </button>
+            <button className={`filters_btn ${theme === 'dark' && 'dark'}`}>
+                inactive
+            </button>
         </div>
     )
 }

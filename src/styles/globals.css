@@ -1,7 +1,14 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     font-size: 1rem;
+    min-height: 100vh;
     background: var(--light-gradient);
+    color: var(--neutral-900);
+
+    &.dark {
+        background: var(--dark-gradient);
+        color: var(--neutral-0);
+    }
 }
 
 .container {

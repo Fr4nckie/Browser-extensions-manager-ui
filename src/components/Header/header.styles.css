@@ -8,6 +8,12 @@
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     margin-top: 24px;
+    /* color: var(--neutral-900); */
+
+    &.dark {
+        /* color: var(--neutral-0); */
+        background-color: var(--neutral-700);
+    }
 }
 
 .header_btn-theme {
@@ -18,5 +24,9 @@
 
     &:hover {
         border-color: var(--red-500);
+    }
+
+    &.dark {
+        background-color: var(--neutral-600);
     }
 }

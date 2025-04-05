@@ -1,7 +1,13 @@
+import { useTheme } from '../../hooks/useTheme.jsx'
 import './button.styles.css'
 
 function Button() {
-    return <button className="btn-outline">remove</button>
+    const { theme } = useTheme()
+    return (
+        <button className={`btn-outline ${theme === 'dark' && 'dark'}`}>
+            remove
+        </button>
+    )
 }
 
 export default Button

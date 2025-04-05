@@ -3,10 +3,14 @@
     place-items: center;
     gap: 16px;
     margin-block: 32px;
+    /* color: var(--neutral-900); */
+
+    &.dark {
+        /* color: var(--neutral-0); */
+    }
 }
 
 .section-extensions_title {
-    color: var(--neutral-900);
     font-size: 2rem;
 }
 
