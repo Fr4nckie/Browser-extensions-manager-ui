@@ -29,7 +29,7 @@ button {
     background-color: unset;
     border: none;
     cursor: pointer;
-    font-family: inherit;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body {
